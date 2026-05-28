@@ -18,8 +18,8 @@ const config: Config = {
         "section-bg": "#EFF3F8",
         "section-white": "#F8F9FA",
         "text-dark": "#1A1A2E",
-        "green-cta": "#1B5E20",
-        "green-accent": "#2E7D32",
+        "green-cta": "#003580",
+        "green-accent": "#006994",
         // Radix/shadcn compatibility
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -48,8 +48,8 @@ const config: Config = {
         ring: "hsl(var(--ring))",
       },
       fontFamily: {
-        serif: ["Playfair Display", "Georgia", "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
+        serif: ["Montserrat", "system-ui", "sans-serif"],
+        sans: ["Montserrat", "system-ui", "sans-serif"],
       },
       backgroundImage: {
         "hero-gradient": "linear-gradient(135deg, #003580 0%, #006994 100%)",

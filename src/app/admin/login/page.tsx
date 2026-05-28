@@ -42,11 +42,13 @@ export default function AdminLoginPage() {
       <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-sm mx-4">
         <div className="text-center mb-8">
           <div className="mx-auto mb-4 flex justify-center">
-            <img
-              src="/PNH_2016_logo.svg"
-              alt="Partido Nacional de Honduras"
-              className="h-16 w-auto object-contain"
-            />
+            <div className="rounded-xl px-5 py-3" style={{ backgroundColor: "#003580" }}>
+              <img
+                src="/PNHBLANCO.png"
+                alt="Partido Nacional de Honduras"
+                className="h-14 w-auto object-contain"
+              />
+            </div>
           </div>
           <h1 className="font-serif text-2xl font-bold text-text-dark">Panel de Administración</h1>
           <p className="text-gray-500 text-sm mt-1">Partido Nacional de Honduras</p>

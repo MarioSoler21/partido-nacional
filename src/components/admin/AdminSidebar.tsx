@@ -38,11 +38,13 @@ export default function AdminSidebar() {
       {/* Header */}
       <div className="p-6 border-b border-gray-100">
         <div className="flex items-center gap-3">
-          <img
-            src="/PNH_2016_logo.svg"
-            alt="Partido Nacional de Honduras"
-            className="h-8 w-auto object-contain"
-          />
+          <div className="rounded-lg px-2 py-1" style={{ backgroundColor: "#003580" }}>
+            <img
+              src="/PNHBLANCO.png"
+              alt="Partido Nacional de Honduras"
+              className="h-7 w-auto object-contain"
+            />
+          </div>
           <div>
             <p className="font-bold text-sm text-text-dark">Panel Admin</p>
             <p className="text-xs text-gray-400">Partido Nacional</p>

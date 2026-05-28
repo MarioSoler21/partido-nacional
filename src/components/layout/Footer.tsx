@@ -28,9 +28,9 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="mb-4">
               <img
-                src="/PNH_2016_logo.svg"
+                src="/PNHBLANCO.png"
                 alt="Partido Nacional de Honduras"
-                className="h-14 w-auto object-contain brightness-0 invert"
+                className="h-14 w-auto object-contain"
               />
             </div>
             <p className="text-blue-100 text-sm leading-relaxed max-w-sm italic font-serif">

@@ -7,7 +7,7 @@ const categoryColors: Record<string, string> = {
   Infraestructura: "bg-blue-100 text-blue-800",
   Educación: "bg-purple-100 text-purple-800",
   Salud: "bg-red-100 text-red-800",
-  Ambiente: "bg-green-100 text-green-800",
+  Ambiente: "bg-blue-100 text-blue-800",
   Social: "bg-amber-100 text-amber-800",
 };
 
@@ -50,7 +50,7 @@ export default function ProjectCard({
       </div>
 
       <div className="p-5">
-        <div className="flex items-center gap-2 text-green-accent text-xs mb-3">
+        <div className="flex items-center gap-2 text-teal text-xs mb-3">
           <Calendar size={12} />
           <span>{formatDateShort(creadoEn)}</span>
         </div>
@@ -62,7 +62,7 @@ export default function ProjectCard({
         </p>
         <Link
           href={`/proyectos/${slug}`}
-          className="inline-flex items-center gap-1.5 text-green-cta font-semibold text-sm hover:gap-2.5 transition-all"
+          className="inline-flex items-center gap-1.5 text-primary font-semibold text-sm hover:gap-2.5 transition-all"
         >
           Ver Proyecto
           <ArrowRight size={14} />

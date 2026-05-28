@@ -36,7 +36,7 @@ export default function NewsCard({
       <div className="p-5 -mt-4 relative">
         {/* White card body */}
         <div className="bg-white rounded-xl pt-4">
-          <div className="flex items-center gap-2 text-green-accent text-xs font-medium mb-3">
+          <div className="flex items-center gap-2 text-teal text-xs font-medium mb-3">
             <Calendar size={12} />
             <span>{formatDateShort(creadoEn)}</span>
             {tags && tags[0] && (
@@ -59,10 +59,10 @@ export default function NewsCard({
 
           <Link
             href={`/noticias/${slug}`}
-            className="inline-flex items-center gap-1 text-green-cta font-semibold text-sm hover:gap-2 transition-all"
+            className="inline-flex items-center gap-1 text-primary font-semibold text-sm hover:gap-2 transition-all"
           >
             Leer Más
-            <span className="text-green-cta">{">>"}</span>
+            <span className="text-primary">{">>"}</span>
           </Link>
         </div>
       </div>
