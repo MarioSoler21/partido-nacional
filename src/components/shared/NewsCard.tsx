@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Calendar } from "lucide-react";
+import { motion } from "framer-motion";
 import { formatDateShort, truncate } from "@/lib/utils";
 
 interface NewsCardProps {
@@ -21,7 +24,11 @@ export default function NewsCard({
   tags,
 }: NewsCardProps) {
   return (
-    <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg news-card border border-gray-100 group">
+    <motion.article
+      className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group"
+      whileHover={{ y: -6, boxShadow: "0 16px 40px rgba(0,53,128,0.14)" }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
+    >
       {/* Image with slight upward overlap effect */}
       <div className="relative h-52 overflow-hidden bg-gray-100">
         <Image
@@ -66,6 +73,6 @@ export default function NewsCard({
           </Link>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }

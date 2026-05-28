@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Calendar, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { formatDateShort } from "@/lib/utils";
 
 const categoryColors: Record<string, string> = {
@@ -29,7 +32,11 @@ export default function ProjectCard({
   creadoEn,
 }: ProjectCardProps) {
   return (
-    <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg news-card border border-gray-100">
+    <motion.article
+      className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100"
+      whileHover={{ y: -6, boxShadow: "0 16px 40px rgba(0,53,128,0.14)" }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
+    >
       <div className="relative h-48 overflow-hidden">
         <Image
           src={imagen || "/placeholder-project.jpg"}
@@ -68,6 +75,6 @@ export default function ProjectCard({
           <ArrowRight size={14} />
         </Link>
       </div>
-    </article>
+    </motion.article>
   );
 }
