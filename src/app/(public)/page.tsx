@@ -1,5 +1,3 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/home/HeroSection";
 import StatsStrip from "@/components/home/StatsStrip";
 import ProjectsGrid from "@/components/home/ProjectsGrid";
@@ -9,15 +7,11 @@ import SocialFeed from "@/components/home/SocialFeed";
 export default function HomePage() {
   return (
     <>
-      <Navbar />
-      <main className="pt-16 lg:pt-20">
-        <HeroSection />
-        <StatsStrip />
-        <ProjectsGrid />
-        <NewsGrid />
-        <SocialFeed />
-      </main>
-      <Footer />
+      <HeroSection />
+      <StatsStrip />
+      <ProjectsGrid />
+      <NewsGrid />
+      <SocialFeed />
     </>
   );
 }
