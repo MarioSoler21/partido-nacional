@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main className="pt-16 lg:pt-20">
+      <main className="pt-12 lg:pt-14">
         <HeroSection />
         <StatsStrip />
         <ProjectsGrid />

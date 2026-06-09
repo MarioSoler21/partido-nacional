@@ -29,19 +29,19 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-shadow duration-200",
-        scrolled ? "shadow-md" : "shadow-sm",
-        "bg-white"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "backdrop-blur-md bg-white/70 border-b border-white/30",
+        scrolled ? "shadow-lg bg-white/80" : "shadow-none"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-12 lg:h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <img
               src="/PNH_2016_logo.png"
               alt="Partido Nacional de Honduras"
-              className="h-10 lg:h-12 w-auto object-contain"
+              className="h-10 lg:h-14 w-auto object-contain"
             />
           </Link>
 
@@ -82,7 +82,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg">
+        <div className="lg:hidden bg-white/90 backdrop-blur-md border-t border-gray-100 shadow-lg">
           <nav className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => {
               const isActive =
