@@ -39,7 +39,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <img
-              src="/PNH_2016_logo.svg"
+              src="/PNH_2016_logo.png"
               alt="Partido Nacional de Honduras"
               className="h-10 lg:h-12 w-auto object-contain"
             />
