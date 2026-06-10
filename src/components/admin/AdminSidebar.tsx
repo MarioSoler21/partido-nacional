@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import NextImage from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import {
   LayoutDashboard,
@@ -39,9 +40,11 @@ export default function AdminSidebar() {
       <div className="p-6 border-b border-gray-100">
         <div className="flex items-center gap-3">
           <div className="rounded-lg px-2 py-1" style={{ backgroundColor: "#2D22E6" }}>
-            <img
+            <NextImage
               src="/PNHBLANCO.png"
               alt="Partido Nacional de Honduras"
+              width={100}
+              height={28}
               className="h-7 w-auto object-contain"
             />
           </div>

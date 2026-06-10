@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -38,10 +39,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-12 lg:h-14">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <img
+            <Image
               src="/PNH_2016_logo.png"
               alt="Partido Nacional de Honduras"
+              width={160}
+              height={56}
               className="h-10 lg:h-14 w-auto object-contain"
+              priority
             />
           </Link>
 

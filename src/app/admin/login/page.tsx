@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { Lock, Eye, EyeOff } from "lucide-react";
 
 export default function AdminLoginPage() {
@@ -43,9 +44,11 @@ export default function AdminLoginPage() {
         <div className="text-center mb-8">
           <div className="mx-auto mb-4 flex justify-center">
             <div className="rounded-xl px-5 py-3" style={{ backgroundColor: "#2D22E6" }}>
-              <img
+              <Image
                 src="/PNHBLANCO.png"
                 alt="Partido Nacional de Honduras"
+                width={180}
+                height={56}
                 className="h-14 w-auto object-contain"
               />
             </div>
