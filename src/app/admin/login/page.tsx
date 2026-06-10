@@ -37,12 +37,12 @@ export default function AdminLoginPage() {
   return (
     <div
       className="min-h-screen flex items-center justify-center"
-      style={{ background: "linear-gradient(135deg, #003580 0%, #006994 100%)" }}
+      style={{ background: "linear-gradient(135deg, #2D22E6 0%, #3125F0 100%)" }}
     >
       <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-sm mx-4">
         <div className="text-center mb-8">
           <div className="mx-auto mb-4 flex justify-center">
-            <div className="rounded-xl px-5 py-3" style={{ backgroundColor: "#003580" }}>
+            <div className="rounded-xl px-5 py-3" style={{ backgroundColor: "#2D22E6" }}>
               <img
                 src="/PNHBLANCO.png"
                 alt="Partido Nacional de Honduras"

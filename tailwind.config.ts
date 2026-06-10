@@ -11,15 +11,16 @@ const config: Config = {
     extend: {
       colors: {
         // Brand palette
-        primary: "#003580",
-        teal: "#006994",
+        primary: "#2D22E6",
+        teal: "#3125F0",
+        "primary-hover": "#2118B8",
         gold: "#C9A84C",
         "gold-light": "#E8C875",
         "section-bg": "#EFF3F8",
         "section-white": "#F8F9FA",
         "text-dark": "#1A1A2E",
-        "green-cta": "#003580",
-        "green-accent": "#006994",
+        "green-cta": "#2D22E6",
+        "green-accent": "#3125F0",
         // Radix/shadcn compatibility
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -52,8 +53,8 @@ const config: Config = {
         sans: ["Montserrat", "system-ui", "sans-serif"],
       },
       backgroundImage: {
-        "hero-gradient": "linear-gradient(135deg, #003580 0%, #006994 100%)",
-        "navy-gradient": "linear-gradient(180deg, #003580 0%, #002060 100%)",
+        "hero-gradient": "linear-gradient(135deg, #2D22E6 0%, #3125F0 100%)",
+        "navy-gradient": "linear-gradient(180deg, #2118B8 0%, #1a0fa0 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",

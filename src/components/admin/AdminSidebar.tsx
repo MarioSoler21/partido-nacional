@@ -38,7 +38,7 @@ export default function AdminSidebar() {
       {/* Header */}
       <div className="p-6 border-b border-gray-100">
         <div className="flex items-center gap-3">
-          <div className="rounded-lg px-2 py-1" style={{ backgroundColor: "#003580" }}>
+          <div className="rounded-lg px-2 py-1" style={{ backgroundColor: "#2D22E6" }}>
             <img
               src="/PNHBLANCO.png"
               alt="Partido Nacional de Honduras"

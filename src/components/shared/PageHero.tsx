@@ -7,7 +7,7 @@ export default function PageHero({ title, subtitle }: PageHeroProps) {
   return (
     <section
       className="py-20 relative"
-      style={{ background: "linear-gradient(135deg, #003580 0%, #006994 100%)" }}
+      style={{ background: "linear-gradient(135deg, #2D22E6 0%, #3125F0 100%)" }}
     >
       {/* Geometric overlay */}
       <div className="absolute inset-0 pointer-events-none opacity-5">
